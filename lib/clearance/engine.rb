@@ -24,7 +24,6 @@ module Clearance
     end
 
     config.app_middleware.insert_after(
-      ActionDispatch::ParamsParser,
       Clearance::RackSession
     )
 
